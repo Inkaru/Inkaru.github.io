@@ -23,6 +23,7 @@ hr {
 }
 
 #dev-heading {
+  min-height: 200px;
   position: relative;
   background: url(../img/clouds.jpg);
   background-attachment: fixed;
@@ -35,7 +36,7 @@ hr {
 
 #graphisme-heading {
   position: relative;
-  min-height: 140px;
+  min-height: 200px;
   background: url(../img/clouds.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -64,6 +65,10 @@ hr {
     #dev-heading {
       min-height: 230px;
     }
+
+    #graphisme-heading {
+      min-height: 150px;
+    }
 }
 
 @media (min-width: 48em) {
@@ -76,6 +81,8 @@ hr {
     #dev-heading {
       min-height: 200px;
     }
+
+
 }
 
 @media (min-width: 62em) {
