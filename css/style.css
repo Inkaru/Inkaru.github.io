@@ -46,7 +46,15 @@ hr {
   color: #fff;
 }
 
-#dexem-logo {
+#projects a {
+  text-decoration: none;
+}
+
+#projects h3 {
+  color: #779bbd;
+}
+
+#project-image {
   background: white;
 }
 
