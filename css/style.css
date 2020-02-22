@@ -64,6 +64,10 @@ hr {
   color: black;
 }
 
+.ekko-lightbox-container {
+  background: #121212;
+}
+
 @media (min-width: 34em) {
     .card-columns {
         -webkit-column-count: 2;
