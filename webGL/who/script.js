@@ -119,7 +119,7 @@ function init(){
   clock = new THREE.Clock();
   
   uniforms = {
-    uTime: { value: 0.0 }
+    uTime: { value: 0.0 },
   }
   
   var material = new THREE.ShaderMaterial( {
@@ -142,11 +142,11 @@ function init(){
   //Add meshes here
 
   // TUBE
-  var geometry = new THREE.TubeBufferGeometry(curve,100,1.5,15,true);
+  var geometry = new THREE.TubeBufferGeometry(curve,150,1.5,25,true);
   tube = new THREE.Mesh( geometry, material );
   scene.add( tube );
 
-  var geometry2 = new THREE.TubeBufferGeometry(curve,100,1.45,25,true);
+  var geometry2 = new THREE.TubeBufferGeometry(curve,100,1.48,25,true);
   var tube2 = new THREE.Mesh( geometry2, material2 );
   scene.add( tube2 );
   
