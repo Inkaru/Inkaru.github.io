@@ -61,6 +61,8 @@ var scene, camera, renderer, clock, composer;
 var normal, binormal, tube;
 var uniforms;
 var tardis;
+var dirLight;
+var pointLight, targetObject;
 
 // Knot Curve
 function KnotCurve(scale) {
@@ -93,12 +95,21 @@ function init(){
   camera = new THREE.PerspectiveCamera( 100, window.innerWidth / window.innerHeight, 0.1, 15 );
   camera.position.set(0, 3, 10);
   
-  const ambient = new THREE.HemisphereLight(0xffffbb, 0x080820);
+  const ambient = new THREE.HemisphereLight(0xffffbb, 0x0f0f7a);
   scene.add(ambient);
+
+  var scale = 0.04;
+  tardis = new THREE.Group();
+  tardis.scale.set(scale,scale,scale);
+  scene.add(tardis);
   
-  const light = new THREE.DirectionalLight(0xFFFFFF, 1);
-  light.position.set( 1, 10, 6);
-  scene.add(light);
+  pointLight = new THREE.PointLight( 0x9d75d1, 2.5 );
+  pointLight.castShadow = true;
+  scene.add( pointLight );
+
+  var sphereSize = 1;
+  var pointLightHelper = new THREE.PointLightHelper( pointLight, sphereSize );
+  scene.add( pointLightHelper );
   
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
@@ -142,25 +153,19 @@ function init(){
   window.addEventListener( 'resize', resize, false);
 
   // TARDIS
-  var meshMaterial = new THREE.MeshPhongMaterial( { wireframe: false } );
-  // Instantiate a loader
-  var objloader = new THREE.OBJLoader();
-  tardis = new THREE.Group();
-  var scale = 0.04;
+  var meshMaterial = new THREE.MeshPhongMaterial( { 
+    wireframe: false 
+  } );
+;
+  var objloader = new THREE.GLTFLoader();
   objloader.load(
-    './tardis.obj',
+    './tardis2.glb',
     function(object) {
-      object.traverse(function(child){
-        if(child.isMesh) {
-          child.material = meshMaterial;
-          child.scale.set(scale,scale,scale);
-        }    
-      });
-      tardis.add(object);
+      object.scene.castShadow = true;
+      object.scene.receiveShadow = true;
+      tardis.add(object.scene);
     }
-  );
-
-  scene.add(tardis);
+  );  
 
   // postprocessing
   composer = new THREE.EffectComposer( renderer );
@@ -173,6 +178,22 @@ function init(){
   effectVignette.uniforms[ "darkness" ].value = 1.2;
   effectVignette.renderToScreen = true;
   composer.addPass(effectVignette);
+
+  // create an AudioListener and add it to the camera
+  var listener = new THREE.AudioListener();
+  camera.add( listener );
+
+  // create a global audio source
+  var sound = new THREE.Audio( listener );
+
+  // load a sound and set it as the Audio object's buffer
+  var audioLoader = new THREE.AudioLoader();
+  audioLoader.load( 'sound.mp3', function( buffer ) {
+    sound.setBuffer( buffer );
+    sound.setLoop( true );
+    sound.setVolume( 0.2 );
+    sound.play();
+  });
   
   update();
 }
@@ -184,8 +205,7 @@ function update(){
   uniforms.uTime.value += clock.getDelta();
   updateCamera();
   tardis.rotation.y += 0.05;
-  // tardis.rotation.z += 0.01*Math.cos(uniforms.uTime.value);
-  //renderer.render( scene, camera );
+  tardis.rotation.z += 0.005*Math.cos(uniforms.uTime.value);
   composer.render();
 }
 
@@ -193,14 +213,16 @@ function updateCamera(){
   const time = clock.getElapsedTime();
   const looptime = 20;
 	const t = ( time % looptime ) / looptime;
-  const t2 = ( (time + 0.2) % looptime) / looptime
+  const t2 = ( (time + 0.25) % looptime) / looptime
 
   const pos = tube.geometry.parameters.path.getPointAt( t );
   const pos2 = tube.geometry.parameters.path.getPointAt( t2 );
-  tardis.position.copy(pos2);
+
+  tardis.position.copy(pos2).add(new THREE.Vector3(0.5 * Math.cos(time),0,0));
 
   camera.position.copy(pos);
   camera.lookAt(pos2);
+  
 }
 
 function resize(){
