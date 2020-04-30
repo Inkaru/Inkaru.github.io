@@ -1,0 +1,22 @@
+#home-header {
+  background-color: rgb(27, 85, 139);
+  color: white;
+}
+
+hr {
+  border: 0;
+  border-top: 3px solid rgb(27, 85, 139);
+  width: 70%;
+}
+
+.slick-prev:before {
+  color: #333;
+}
+.slick-next:before {
+  color: #333;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
