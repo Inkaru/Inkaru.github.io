@@ -1,5 +1,10 @@
-#home-header {
+#projects-header {
   background-color: rgb(27, 85, 139);
+  color: white;
+}
+
+#home-header {
+  background-color: rgb(24, 145, 70);
   color: white;
 }
 

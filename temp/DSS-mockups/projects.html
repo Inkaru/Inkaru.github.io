@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>DSS</title>
+</head>
+
+<body>
+  <!-- START HERE -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">DSS</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item" px-2>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item" px-2>
+            <a href="projects.html" class="nav-link active">Projects</a>
+          </li>
+          <li class="nav-item" px-2>
+            <a href="" class="nav-link">Partners</a>
+          </li>
+          <li class="nav-item" px-2>
+            <a href="" class="nav-link">Resources</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user"></i>
+              Welcome Brad
+            </a>
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">
+                <i class="fas fa-user-circle"></i>
+                Profile
+              </a>
+              <a href="" class="dropdown-item">
+                <i class="fas fa-cog"></i>
+                Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="projects-header">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-5">
+          <h1 class="display-4">Take part in new projects</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sunt hic asperiores
+            dignissimos! Exercitationem vero, vel minima earum mollitia placeat!</p>
+          <a href="projectForm.html" class="btn btn-success mr-2">Submit your own</a>
+          <a href="" class="btn btn-warning ">Browse existing Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="suggestions">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col">
+          <h4>Project suggestions for you :</h4>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-slider">
+          <div class="project">
+            <div class="row bg-light">
+              <div class="col-4 align-self-center">
+                <div class="rounded py-1">
+                  <a href="" target="_blank">
+                    <img src="https://source.unsplash.com/random/500x400" class="img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-8 align-self-center text-left">
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem qui labore quis, alias
+                  aliquam, quibusdam, quam veniam reiciendis tempore incidunt vel molestiae non impedit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="row bg-light">
+              <div class="col-4 align-self-center">
+                <div class="rounded py-1">
+                  <a href="" target="_blank">
+                    <img src="https://source.unsplash.com/random/500x400" class="img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-8 align-self-center text-left">
+                <h3>Project 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem qui labore quis, alias
+                  aliquam, quibusdam, quam veniam reiciendis tempore incidunt vel molestiae non impedit!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="project-list">
+    <div class="row col-10 offset-1">
+      <div class="container col-3 bg-light p-3">
+
+        <h3>Filter Projects :</h3>
+        
+
+        <form class="mt-3">
+          <div class="form-group">
+            <button class="btn btn-primary mb-3" type="submit">
+              <i class="fas fa-search"></i>
+              Apply filters
+            </button>
+
+            <input type="text" class="form-control mb-2" placeholder="Keywords">
+
+            <label for="field">Field</label>
+            <select id="field" class="form-control mb-2">
+              <option>Field#1</option>
+              <option>Field#2</option>
+            </select>
+
+            <label for="field">Country</label>
+            <select id="field" class="form-control mb-2">
+              <option>France</option>
+              <option>Germany</option>
+            </select>
+
+            <label for="field">Size</label>
+            <select id="field" class="form-control mb-2">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Big</option>
+            </select>
+
+          </div> 
+        </form>
+      </div>
+
+
+      <div class="container col-9">
+        <div class="card-columns">
+
+          <div class="card project-card">
+            <img src="https://source.unsplash.com/random/301x200" alt="" class="img-fluid card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Project 1</h4>
+              <small class="text-muted">Company #1</small>
+              <hr>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus unde
+                commodi
+                utsapiente quas non magni iusto. Numquam, doloremque?</p>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <div class="card-body">
+              <h4 class="card-title">Project 2</h4>
+              <small class="text-muted">Company #1</small>
+              <hr>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus unde
+                commodi
+                utsapiente quas non magni iusto. Numquam, doloremque?</p>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <img src="https://source.unsplash.com/random/301x201" alt="" class="img-fluid card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Project 3</h4>
+              <small class="text-muted">Company #1</small>
+              <hr>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus unde
+                commodi
+                utsapiente quas non magni iusto. Numquam, doloremque?</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy; <span id="year"></span> DSS
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    $('.project-slider').slick({
+      arrows: true,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 3000
+    });
+  </script>
+</body>
+
+</html>
+
+<!-- 
+  <div class="container col-8">
+    <section id="info" class="py-3 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 align-self-center">
+            <div class="rounded py-1">
+              <a href="" target="_blank">
+                <img src="https://source.unsplash.com/random/500x400" class="img-fluid" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-8 align-self-center text-left">
+            <h3>Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem qui labore quis, alias aliquam, quibusdam, quam veniam reiciendis tempore incidunt vel molestiae non impedit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div> -->
