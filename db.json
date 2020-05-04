@@ -1,32 +1,34 @@
-[
-  {
-    "_id": "5eb041f3679dc7095609117b",
-    "picture": "http://placehold.it/32x32",
-    "compagny": "Flotonic",
-    "country": "Vanuatu"
-  },
-  {
-    "_id": "5eb041f30f9ab3a025531435",
-    "picture": "http://placehold.it/32x32",
-    "compagny": "Zytrax",
-    "country": "Bermuda"
-  },
-  {
-    "_id": "5eb041f31b68d60be08b7218",
-    "picture": "http://placehold.it/32x32",
-    "compagny": "Anarco",
-    "country": "Albania"
-  },
-  {
-    "_id": "5eb041f3bc3d9a61640e0f02",
-    "picture": "http://placehold.it/32x32",
-    "compagny": "Knowlysis",
-    "country": "Barbados"
-  },
-  {
-    "_id": "5eb041f34b329bfd23ce8adb",
-    "picture": "http://placehold.it/32x32",
-    "compagny": "Conjurica",
-    "country": "San Marino"
-  }
-]
+{
+  "companies": [
+    {
+      "_id": "5eb041f3679dc7095609117b",
+      "picture": "http://placehold.it/32x32",
+      "compagny": "Flotonic",
+      "country": "Vanuatu"
+    },
+    {
+      "_id": "5eb041f30f9ab3a025531435",
+      "picture": "http://placehold.it/32x32",
+      "compagny": "Zytrax",
+      "country": "Bermuda"
+    },
+    {
+      "_id": "5eb041f31b68d60be08b7218",
+      "picture": "http://placehold.it/32x32",
+      "compagny": "Anarco",
+      "country": "Albania"
+    },
+    {
+      "_id": "5eb041f3bc3d9a61640e0f02",
+      "picture": "http://placehold.it/32x32",
+      "compagny": "Knowlysis",
+      "country": "Barbados"
+    },
+    {
+      "_id": "5eb041f34b329bfd23ce8adb",
+      "picture": "http://placehold.it/32x32",
+      "compagny": "Conjurica",
+      "country": "San Marino"
+    }
+  ]
+}
