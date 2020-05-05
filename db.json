@@ -1,34 +1,74 @@
 {
   "companies": [
     {
-      "_id": "5eb041f3679dc7095609117b",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Flotonic",
-      "country": "Vanuatu"
+      "_id": "5eb175efc7cba12172203002",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Gleamink",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f30f9ab3a025531435",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Zytrax",
-      "country": "Bermuda"
+      "_id": "5eb175ef8a9527f6831be1d5",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Hatology",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f31b68d60be08b7218",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Anarco",
-      "country": "Albania"
+      "_id": "5eb175ef7f76781f02a94c61",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Hotcakes",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f3bc3d9a61640e0f02",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Knowlysis",
-      "country": "Barbados"
+      "_id": "5eb175ef3d0c5f899b401094",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Namebox",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f34b329bfd23ce8adb",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Conjurica",
-      "country": "San Marino"
+      "_id": "5eb175ef0af1cb9ee0853ecc",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Lotron",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb175efbf18bae60f42273c",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Multiflex",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb175ef2effbb899153bb55",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Collaire",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb175ef04780999f43830fc",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Zidox",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb175efae0f75e4eb713aa4",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Translink",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb175ef6f86c07336b7b3a5",
+      "name": "<ReferenceError: words is not defined>",
+      "company": "Gallaxia",
+      "description": "<ReferenceError: sentences is not defined>",
+      "mainPic": "https://source.unsplash.com/random"
     }
   ]
 }
