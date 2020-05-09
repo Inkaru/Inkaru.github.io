@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -20,7 +23,7 @@
 
 <body>
   <!--NAVBAR-->
-  <nav id="main-nav" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <nav id="main-nav" class="navbar navbar-custom navbar-expand-sm navbar-dark fixed-top">
     <div class="container">
       <a href="index.html" class="navbar-brand">Pierre-Antoine Cabaret</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -30,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#intro" class="nav-link active">Intro</a>
+            <a href="#" class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
             <a href="projets.html" class="nav-link">Projets</a>
@@ -41,65 +44,43 @@
           <li class="nav-item">
             <a href="experiments.html" class="nav-link">Expérimentations</a>
           </li>
-          <li class="nav-item">
-            <a href="mailto:pierreant.cab@gmail.com?Subject=Contact" class="nav-link" target="_top">
-              <i class="far fa-envelope"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/Inkaru" class="nav-link" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://linkedin.com/in/pierre-antoine-cabaret" class="nav-link" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!--INTRO SECTION-->
-  <header id="home-header">
-    <div class="container pb-2">
-      <div class="row">
-        <div class="col text-center">
-          <h1 class="display-5 mt-5 pt-5">Pierre-Antoine Cabaret</h1>
+  <header id="home-heading">
+    <div class="container-fluid pb-2 dark-overlay">
+      <div class="row  mt-5 pt-5">
+        <div class="col text-right">
+          <div class="h3" id="name">Pierre-Antoine<br>Cabaret</div>
+        </div>
+        <div class="col my-auto">
+          <div class="offset-1">
+            <a href="https://github.com/Inkaru/" target="_blank">
+              <button class="btn btn-lg btn-link text-white contact-icons">
+                <i class="fab fa-github"></i>
+              </button>
+            </a>
+            <a href="mailto:pierreant.cab@gmail.com?Subject=Contact" target="_blank">
+              <button class="btn btn-lg btn-link text-white contact-icons">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </a>
+            <a href="https://linkedin.com/in/pierre-antoine-cabaret" target="_blank">
+              <button class="btn btn-lg btn-link text-white contact-icons">
+                <i class="fab fa-linkedin"></i>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
     </div>
   </header>
 
-  <section id="dev-heading" class="p-5">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col">
-          <div class="container pt-5">
-            <h1 class="mb-4">Étudiant Ingénieur Informatique</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 m-auto text-center">
-          <div class="slider">
-            <div>Java</div>
-            <div>HTML / CSS</div>
-            <div>Ruby on Rails</div>
-            <div>Angular</div>
-            <div>C++</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="info" class="py-3 m-3">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
           <p class="lead">
@@ -120,7 +101,7 @@
       <div class="row">
         <div class="col">
           <div class="container pt-5">
-            <h1>Dessin & Graphisme</h1>
+            <h2>Dessin & Graphisme</h2>
           </div>
         </div>
       </div>
@@ -128,7 +109,7 @@
   </section>
 
   <section id="info" class="py-3 m-3">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
           <p class="lead">
@@ -142,8 +123,10 @@
     </div>
   </section>
 
-  <footer id="footer" class="py-4 mt-5">
-    <div class="container">
+
+
+  <footer id="footer" class="py-2 mt-5">
+    <div class="container-fluid">
       <div class="row text-center">
         <div class="col-md-6 ml-auto">
           Pierre-Antoine Cabaret &copy; <span id="year"></span>

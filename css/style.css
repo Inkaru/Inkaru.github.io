@@ -1,12 +1,26 @@
 body {
-  background: #121212;
+  background: #07021d;
   color: white;
   overflow-x: hidden;
 }
 
-.navbar {
-  border-bottom: rgb(255, 123, 0, 0.8) 3px solid;
+p.lead {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: large;
 }
+
+.lead-custom {
+  font-weight: bold;
+  font-size: larger;
+  line-height: 250%;
+}
+
+.navbar-custom { 
+  border-bottom: rgb(255, 123, 0, 0.8) 3px solid;
+  font-weight: 400;
+  background-color: rgb(22, 15, 63); 
+} 
 
 hr {
   border: 0;
@@ -20,24 +34,28 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
 }
 
-#dev-heading {
-  min-height: 200px;
+#name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+#home-heading {
+  min-height: 180px;
   position: relative;
   background: url(../img/clouds.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
   color: #fff;
 }
 
 #graphisme-heading {
   position: relative;
-  min-height: 200px;
+  min-height: 150px;
   background: url(../img/clouds.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -52,59 +70,109 @@ hr {
 }
 
 #projects h3 {
-  color: #779bbd;
+  color: #bfc0ff;
 }
 
 #project-image {
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 #footer {
-  background: rgb(255, 123, 0, 0.8);
-  color: black;
+  background: rgb(22, 15, 63);
+  color: lightgrey;
 }
 
 .ekko-lightbox-container {
   background: #121212;
 }
 
-@media (min-width: 34em) {
+@media (max-width: 575.98px) {
     .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-
-    #dev-heading {
-      min-height: 230px;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 
     #graphisme-heading {
-      min-height: 150px;
+      min-height: 140px;
     }
+
+    .contact-icons {
+      font-size: 20px;
+    }
+
+    #name {
+      font-size: 20px;
+    }
+
 }
 
-@media (min-width: 48em) {
+@media (min-width: 576px) {
+  .card-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+  }
+
+  #home-heading {
+    min-height: 200px;
+  }
+
+  #graphisme-heading {
+    min-height: 150px;
+  }
+
+  .contact-icons {
+    font-size: 40px;
+  }
+
+  #name {
+    font-size: 30px;
+  }
+
+}
+
+@media (min-width: 768px) {
     .card-columns {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
     }
 
-    #dev-heading {
-      min-height: 200px;
+    #home-heading {
+      min-height: 250px;
     }
 
+    .contact-icons {
+      font-size: 50px;
+    }
+
+    #name {
+      font-size: 50px;
+    }
 
 }
 
-@media (min-width: 62em) {
+@media (min-width: 1200px) {
     .card-columns {
         -webkit-column-count: 4;
         -moz-column-count: 4;
         column-count: 4;
     }
 
+    #home-heading {
+      min-height: 300px;
+    }
+
+    .contact-icons {
+      font-size: 85px;
+    }
+
+    #name {
+      font-size: 70px;
+    }
+
 
 }
+
 
