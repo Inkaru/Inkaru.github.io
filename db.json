@@ -1,34 +1,60 @@
 {
   "companies": [
     {
-      "_id": "5eb041f3679dc7095609117b",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Flotonic",
-      "country": "Vanuatu"
+      "_id": "5eb176c17cb329a111680f93",
+      "name": "irure laborum",
+      "company": "Eargo",
+      "description": "Consectetur dolor proident duis eiusmod nisi sit consequat tempor. Voluptate deserunt culpa incididunt est laboris. Et voluptate cupidatat ad consequat.",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f30f9ab3a025531435",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Zytrax",
-      "country": "Bermuda"
+      "_id": "5eb176c1132e3ad63f42ba2c",
+      "name": "anim velit",
+      "company": "Corpulse",
+      "description": "Eu officia deserunt occaecat sit enim veniam ut eiusmod labore consequat. Sunt anim occaecat minim veniam do ad deserunt ea reprehenderit. Qui fugiat laborum et laboris irure sint mollit ut mollit veniam occaecat magna consequat.",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f31b68d60be08b7218",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Anarco",
-      "country": "Albania"
+      "_id": "5eb176c1087dec1e56da600c",
+      "name": "anim commodo",
+      "company": "Gynk",
+      "description": "Nostrud ullamco Lorem ea non nostrud mollit sit sunt elit ipsum. Minim ea velit et dolor nisi aliqua do laboris sit do ad ad do nisi. Qui veniam et reprehenderit dolore.",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f3bc3d9a61640e0f02",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Knowlysis",
-      "country": "Barbados"
+      "_id": "5eb176c1030266f653de70c1",
+      "name": "dolor enim",
+      "company": "Xerex",
+      "description": "Officia adipisicing nulla do exercitation esse aliqua ex laborum est culpa reprehenderit consectetur irure aliqua. Eiusmod magna dolor aliquip Lorem. Quis incididunt Lorem consectetur tempor qui exercitation exercitation.",
+      "mainPic": "https://source.unsplash.com/random"
     },
     {
-      "_id": "5eb041f34b329bfd23ce8adb",
-      "picture": "http://placehold.it/32x32",
-      "compagny": "Conjurica",
-      "country": "San Marino"
+      "_id": "5eb176c136c4217d9460f3ce",
+      "name": "pariatur cupidatat",
+      "company": "Quotezart",
+      "description": "Veniam ullamco Lorem cupidatat officia. Voluptate elit voluptate eiusmod ad incididunt eiusmod et ad commodo. Aliqua laborum eu ad laboris excepteur aliquip enim.",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb176c1ee3744a6a0ca5cf0",
+      "name": "ad commodo",
+      "company": "Sportan",
+      "description": "Ex in fugiat esse do ea adipisicing nulla amet exercitation quis nostrud. Mollit occaecat ut et commodo ea officia magna Lorem nulla Lorem sit do. Non sit pariatur nisi ad.",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb176c1736a82104f3c988e",
+      "name": "eu anim",
+      "company": "Sloganaut",
+      "description": "Officia dolore mollit enim ex culpa anim excepteur consequat labore pariatur. Lorem duis mollit anim mollit aliquip est consequat adipisicing adipisicing voluptate do irure reprehenderit dolore. Anim voluptate labore ad non dolore elit.",
+      "mainPic": "https://source.unsplash.com/random"
+    },
+    {
+      "_id": "5eb176c13323f02fb2e2b3b1",
+      "name": "id Lorem",
+      "company": "Skybold",
+      "description": "Dolore aliquip mollit duis et nisi nostrud laborum laboris nulla occaecat ea nisi esse. Officia dolore sit mollit et dolor occaecat velit excepteur. Minim enim ad minim amet ex eiusmod adipisicing fugiat excepteur aute.",
+      "mainPic": "https://source.unsplash.com/random"
     }
   ]
 }
