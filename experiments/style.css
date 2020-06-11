@@ -1,0 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#ref {
+    z-index: 9;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: grey;
+}
