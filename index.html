@@ -1,157 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Home</title>
-</head>
-<!-- START HERE -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <!-- START HERE -->
 
-<body>
-  <!--NAVBAR-->
-  <nav id="main-nav" class="navbar navbar-custom navbar-expand-sm navbar-dark fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">Pierre-Antoine Cabaret</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body>
+    <!--NAVBAR-->
+    <nav id="main-nav"
+      class="navbar navbar-custom navbar-expand-sm navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Pierre-Antoine Cabaret</a>
+        <button class="navbar-toggler" data-toggle="collapse"
+          data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="projets.html" class="nav-link">Projets</a>
-          </li>
-          <li class="nav-item">
-            <a href="graphisme.html" class="nav-link">Graphisme</a>
-          </li>
-          <li class="nav-item">
-            <a href="experiments.html" class="nav-link">Expérimentations</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://scholar.google.com/citations?user=uM6B35oAAAAJ"
+                class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a href="graphisme.html" class="nav-link">Graphic Design</a>
+            </li>
+            <li class="nav-item">
+              <a href="experiments.html" class="nav-link">Projects</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="projets.html" class="nav-link">Projects</a>
+            </li> -->
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!--INTRO SECTION-->
-  <header id="home-heading">
-    <div class="container-fluid pb-2 dark-overlay">
-      <div class="row  mt-5 pt-5">
-        <div class="col d-none d-sm-block text-right">
-          <div class="h3" id="name">Pierre-Antoine<br>Cabaret</div>
-        </div>
-        <div class="col d-sm-none text-center">
-          <div class="h3" id="name">Pierre-Antoine<br>Cabaret</div>
-        </div>
-        <div class="col my-auto">
-          <div class="">
-            <a href="https://github.com/Inkaru/" target="_blank">
-              <button class="btn btn-lg btn-link text-white contact-icons">
-                <i class="fab fa-github"></i>
-              </button>
-            </a>
-            <a href="mailto:pierreant.cab@gmail.com?Subject=Contact" target="_blank">
-              <button class="btn btn-lg btn-link text-white contact-icons">
-                <i class="fas fa-envelope"></i>
-              </button>
-            </a>
-            <a href="https://linkedin.com/in/pierre-antoine-cabaret" target="_blank">
-              <button class="btn btn-lg btn-link text-white contact-icons">
-                <i class="fab fa-linkedin"></i>
-              </button>
-            </a>
+    <!--INTRO SECTION-->
+    <header id="home-heading">
+      <div class="container-fluid pb-2 dark-overlay">
+        <div class="row  mt-5 pt-5">
+          <div class="col d-none d-sm-block text-right">
+            <div class="h3" id="name">Pierre-Antoine<br>Cabaret</div>
+          </div>
+          <div class="col d-sm-none text-center">
+            <div class="h3" id="name">Pierre-Antoine<br>Cabaret</div>
+          </div>
+          <div class="col my-auto">
+            <div class>
+              <a href="mailto:pierreant.cab@gmail.com?Subject=Contact"
+                target="_blank">
+                <button class="btn btn-lg btn-link text-white contact-icons">
+                  <i class="fas fa-envelope"></i>
+                </button>
+              </a>
+              <a href="https://linkedin.com/in/pierre-antoine-cabaret"
+                target="_blank">
+                <button class="btn btn-lg btn-link text-white contact-icons">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://scholar.google.com/citations?user=uM6B35oAAAAJ"
+                target="_blank">
+                <button class="btn btn-lg btn-link text-white contact-icons">
+                  <i class="fas fa-user-graduate"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Inkaru/" target="_blank">
+                <button class="btn btn-lg btn-link text-white contact-icons">
+                  <i class="fab fa-github"></i>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section id="info" class="py-3 m-3">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
-          <p class="lead">
-            Étudiant à l'INSA Rennes depuis 2016, j'ai choisi le domaine de l'Informatique. J'ai pu m'y spécialiser dans les domaines des Médias et Intéractions, l'IoT et la Robotique.
-            <br>
-            J'ai pu réaliser plusieurs projets au cours de mes études, que ce soit dans le cadre scolaire, sur mon temps libre ou lors de stages en entreprise, vous trouverez ici une description de ces projets.
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 align-self-center">
-          <a href="projets.html" class="btn btn-outline-light btn-lg"> <i class="fas fa-angle-double-right"></i> Projets</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="graphisme-heading" class="p-5">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col">
-          <div class="container pt-5">
-            <h2>Dessin & Graphisme</h2>
+    <section id="info" class="py-3 m-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
+            <p class="lead">
+              In 2021, I graduated from INSA Rennes as Engineer in Computer
+              Science. The same year I also got a Research Master’s degree in
+              Computer Science from INSA Rennes and University of Rennes 1.
+              <br>
+              Since October 2021, I am a PhD student under the
+              supervision of Maud Marchal,
+              Marie Babel and Claudio Pacchierotti in the RAINBOW team at the
+              IRISA laboratory in Rennes.
+              <br>
+              My work is focused on multi-actuator vibrotactile devices and
+              takes part in the DORNELL project, the aim of which is to design
+              an innovative, multisensory,
+              multimodal and intelligent haptic handle to aid mobility for
+              disabled people.
+              My main research interests include Haptic feedback, 3D
+              interactions and Virtual Reality.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 align-self-center">
+            <a href="https://scholar.google.com/citations?user=uM6B35oAAAAJ"
+              class="btn btn-outline-light btn-lg"> <i
+                class="fas fa-angle-double-right"></i> Publications</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="info" class="py-3 m-3">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
-          <p class="lead">
-            Je dessine depuis toujours, que ce soit sur papier ou sur ordinateur. Je mets désormais cette passion à profit en réalisant des illustrations, affiches et logos pour des associations ou mon entourage.
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 align-self-center">
-          <a href="graphisme.html" class="btn btn-outline-light btn-lg"> <i class="fas fa-angle-double-right"></i> Portfolio</a>
+    <!-- <section id="graphisme-heading" class="p-5">
+      <div class="dark-overlay">
+        <div class="row">
+          <div class="col">
+            <div class="container pt-5">
+              <h2>Dessin & Graphisme</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section> -->
 
-
-
-  <footer id="footer" class="py-2 mt-5">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-md-6 ml-auto">
-          Pierre-Antoine Cabaret &copy; <span id="year"></span>
+    <section id="info" class="py-3 m-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
+            <p class="lead">
+              Some development experiments can be found here.
+              Included are some shader and gamedev explorations, as well as some
+              older school projects.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 align-self-center">
+            <a href="experiments.html" class="btn btn-outline-light btn-lg"> <i
+                class="fas fa-angle-double-right"></i> Projects</a>
+          </div>
         </div>
-        
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+    <section id="info" class="py-3 m-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-8 col-lg-6 offset-lg-2 align-self-center text-left">
+            <p class="lead">
+              I've always drawn, either traditionally or digitally. I sometimes
+              create posters, illustrations or logos for myself, for events or
+              for other people.
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 align-self-center">
+            <a href="graphisme.html" class="btn btn-outline-light btn-lg"> <i
+                class="fas fa-angle-double-right"></i> Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <footer id="footer" class="py-2 mt-5">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-6 ml-auto">
+            Pierre-Antoine Cabaret &copy; <span id="year"></span>
+          </div>
 
+        </div>
+      </div>
+    </footer>
 
-  <script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
 
@@ -163,6 +225,6 @@
       autoplaySpeed: 3000,
     });
   </script>
-</body>
+  </body>
 
 </html>
